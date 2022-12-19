@@ -2,7 +2,7 @@
 
 Welcome to my simple currency calculator! This project is in polish.
 
-![zdj](https://user-images.githubusercontent.com/121032802/208478135-6c7eda7f-dce1-4c27-bb38-7abe759d6397.png)
+![Currency converter](https://user-images.githubusercontent.com/121032802/208478135-6c7eda7f-dce1-4c27-bb38-7abe759d6397.png)
 
 ## Demo
 
