@@ -10,6 +10,7 @@
     <meta property="og:image" content="images/currency converter.jpg">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/form.css" rel="stylesheet">
+    <link href="css/element.css" rel="stylesheet">
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
@@ -18,31 +19,33 @@
 </head>
 
 <body class="body">
-    <form class="form js-form">
-        <fieldset class="form__fieldset">
-            <legend class="form__legend">Kalkulator walutowy</legend>
+    <div class="element">
+        <form class="form js-form">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Kalkulator walutowy</legend>
+                <p>
+                    <label>
+                        <span class="form__labelText">Kwota w PLN:</span>
+                        <input class="form__field js-amount" type="number" name="amount" step="0.01" autofocus>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span class="form__labelText">Wybierz walutę:</span>
+                        <select class="form__field js-currency">
+                            <option value="EUR">Euro</option>
+                            <option value="GBP">Funt brytyjski</option>
+                            <option value="USD">Dolar amerykański</option>
+                        </select>
+                    </label>
+                </p>
+            </fieldset>
             <p>
-                <label>
-                    <span class="form__labelText">Kwota w PLN:</span>
-                    <input class="form__field js-amount" type="number" name="amount" step="0.01" autofocus>
-                </label>
+                <button class="form__button" type="submit">Przelicz</button>
             </p>
-            <p>
-                <label>
-                    <span class="form__labelText">Wybierz walutę:</span>
-                    <select class="form__field js-currency">
-                        <option value="EUR">Euro</option>
-                        <option value="GBP">Funt brytyjski</option>
-                        <option value="USD">Dolar amerykański</option>
-                    </select>
-                </label>
-            </p>
-        </fieldset>
-        <p>
-            <button class="form__button" type="submit">Przelicz</button>
-        </p>
-    </form>
-    <p class="result">Kwota po przeliczeniu wynosi: <strong class="js-result"> N/A</strong></p>
+        </form>
+        <p class="result">Kwota po przeliczeniu wynosi: <strong class="js-result"> N/A</strong></p>
+    </div>
 </body>
 
 </html>
