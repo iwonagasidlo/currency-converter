@@ -5,7 +5,7 @@
 
     welcome();
 
-    const calculateResult = (currency) => {
+    const calculateResult = (amount, currency) => {
         const rateEUR = 4.69;
         const rateGBP = 5.44;
         const rateUSD = 4.39;
@@ -24,7 +24,6 @@
 
     const updateResultText = (amount, result, currency) => {
         const resultElement = document.querySelector(".js-result");
-
         resultElement.innerHTML = `${amount.toFixed(2)} PLN = <strong>${result.toFixed(2)} ${currency}</strong>`
     }
 
@@ -40,7 +39,7 @@
         const result = calculateResult(amount, currency);
 
         updateResultText(amount, result, currency);
-    };
+    }
 
     const init = () => {
         const formElement = document.querySelector(".js-form");
