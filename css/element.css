@@ -1,6 +1,6 @@
 .element {
     flex-basis: 600px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(242, 239, 239, 0.926);
     border-radius: 20px;
     padding: 30px;
     border: 2px solid rgb(79, 78, 78);
