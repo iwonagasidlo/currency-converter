@@ -8,13 +8,11 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    padding: 20px;
-    background-color: rgb(251 251 251);
+    background-image: url("../images/background.jpg");
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.section__subHeader {
-    color: teal;
+    background-position: center;
+    background-size: cover;
 }
