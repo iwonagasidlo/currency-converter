@@ -3,8 +3,6 @@
         console.log("Witam na mojej stronie!");
     }
 
-    welcome();
-
     const calculateResult = (amount, currency) => {
         const rateEUR = 4.69;
         const rateGBP = 5.44;
@@ -45,6 +43,8 @@
         const formElement = document.querySelector(".js-form");
 
         formElement.addEventListener("submit", onFormSubmit);
+
+        welcome();
     };
 
     init();
