@@ -18,3 +18,9 @@ There is a calculator that converts polish currency to the couple others, which 
 ## How does it work?
 
 You need to put the amount in polish currency- *"złoty"* and select the currency you want to convert to. Then click the button and you're done!
+
+## Technologies used in this project:
+- HTML
+- CSS 
+- Java Script
+- BEM
